@@ -1,3 +1,29 @@
+# Laravel specific cache and logs
+bootstrap/cache/
+storage/framework/cache/data/
+storage/framework/sessions/
+storage/framework/testing/
+storage/framework/views/
+storage/logs/
+public/storage
+public/hot
+.env.backup
+
+# PHPStorm and VSCode project settings (if using)
+.idea/
+.vscode/
+
+# PHPUnit results cache
+.phpunit.result.cache
+
+# Laravel Mix / Vite cache
+.npm/
+.pnpm/
+vite.config.js
+
+# Composer vendor directory (optional, but usually ignored)
+vendor/
+
 # Logs
 logs
 *.log

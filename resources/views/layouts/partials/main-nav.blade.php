@@ -44,9 +44,9 @@
                     <li class="sub-nav-item">
                             <a class="sub-nav-link" href="{{ route('third', ['general', 'products', 'list'])}}">List</a>
                         </li>
-                        <li class="sub-nav-item">
+                        <!-- <li class="sub-nav-item">
                             <a class="sub-nav-link" href="{{ route('third', ['general', 'products', 'grid'])}}">Grid</a>
-                        </li>
+                        </li> -->
                         <li class="sub-nav-item">
                             <a class="sub-nav-link" href="{{ route('third', ['general', 'products', 'detail'])}}">Details</a>
                         </li>

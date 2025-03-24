@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ['title' => 'Product Grid'])
+<!-- @extends('layouts.vertical', ['title' => 'Product Grid'])
 
 @section('css')
 @vite(['node_modules/nouislider/dist/nouislider.min.css'])
@@ -856,4 +856,4 @@
 
 @section('script-bottom')
 @vite(['resources/js/pages/ecommerce-product.js'])
-@endsection
+@endsection -->

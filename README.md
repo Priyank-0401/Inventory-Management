@@ -61,7 +61,7 @@ Follow these steps to set up **PharmaFleet** locally:
    - Place the project folder in `htdocs` (if using XAMPP).
    - Open the browser and go to:  
      ```
-     http://localhost/pharmafleet
+     http://localhost/Inventory-Management
      ```
 
 ## Future Roadmap

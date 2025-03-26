@@ -48,8 +48,8 @@ Follow these steps to set up **PharmaFleet** locally:
 
 1. **Clone the repository**  
    ```sh
-   git clone https://github.com/your-repo/pharmafleet.git
-   cd pharmafleet
+   git clone https://github.com/Priyank-0401/Inventory-Management.git
+   cd Inventory-Management
    ```
 
 2. **Set up database**  

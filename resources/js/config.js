@@ -19,7 +19,7 @@
           },
 
           menu: {
-               size: "sm-hover-active",   // [ 'default', 'sm-hover-active', 'sm-hover-active', 'condensed', 'full']
+               size: "default",   // [ 'default', 'sm-hover', 'sm-hover-active', 'condensed', 'full']
                color: "dark",            // ['light', 'dark']
           },
      };

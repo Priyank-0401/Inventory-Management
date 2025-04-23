@@ -42,14 +42,14 @@ class Components {
 
         //Toasts
         var toastPlacement = document.getElementById("toastPlacement");
-        if (toastPlacement) {
-            document.getElementById("selectToastPlacement").addEventListener("change", function () {
-                if (!toastPlacement.dataset.originalClass) {
-                    toastPlacement.dataset.originalClass = toastPlacement.className;
-                }
-                toastPlacement.className = toastPlacement.dataset.originalClass + " " + this.value;
-            });
-        }
+        // if (toastPlacement) { // Comment out this block as 'selectToastPlacement' might not exist
+        //     document.getElementById("selectToastPlacement").addEventListener("change", function () {
+        //         if (!toastPlacement.dataset.originalClass) {
+        //             toastPlacement.dataset.originalClass = toastPlacement.className;
+        //         }
+        //         toastPlacement.className = toastPlacement.dataset.originalClass + " " + this.value;
+        //     });
+        // }
 
         var toastElList = [].slice.call(document.querySelectorAll('.toast'))
         var toastList = toastElList.map(function (toastEl) {

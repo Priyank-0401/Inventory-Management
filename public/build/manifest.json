@@ -151,7 +151,7 @@
     "src": "resources/fonts/tabler-icons.woff2"
   },
   "resources/js/app.js": {
-    "file": "assets/app-SxEnrqFw.js",
+    "file": "assets/app-D7lGkmxO.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -474,13 +474,13 @@
     ]
   },
   "resources/js/config.js": {
-    "file": "assets/config-D2eW6rVN.js",
+    "file": "assets/config-LG7XHddV.js",
     "name": "config",
     "src": "resources/js/config.js",
     "isEntry": true
   },
   "resources/js/layout.js": {
-    "file": "assets/layout-DUGMfTaL.js",
+    "file": "assets/layout-CNs2tnD0.js",
     "name": "layout",
     "src": "resources/js/layout.js",
     "isEntry": true

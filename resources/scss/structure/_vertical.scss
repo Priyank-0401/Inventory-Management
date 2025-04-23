@@ -2,6 +2,68 @@
 // _vertical.scss
 //
 
+// Add these styles at the beginning of the file to override default behaviors
+html, html[data-menu-size="condensed"], html[data-menu-size="hidden"], html[data-menu-size="sm-hover"] {
+    &[data-menu-size] {
+        .main-nav {
+            width: $main-nav-width !important;
+            min-width: $main-nav-width !important;
+            margin-left: 0 !important;
+            left: 0 !important;
+            position: fixed !important;
+            
+            .logo-box {
+                text-align: left !important;
+                
+                .logo-lg {
+                    display: block !important;
+                }
+                
+                .logo-sm {
+                    display: none !important;
+                }
+            }
+            
+            .menu-title {
+                height: auto !important;
+                opacity: 1 !important;
+                padding: $main-nav-item-padding-y calc($main-nav-item-padding-x * 1.25) !important;
+            }
+            
+            .nav-item {
+                .nav-link {
+                    justify-content: flex-start !important;
+                    
+                    .nav-text, 
+                    .badge {
+                        display: inline-flex !important;
+                    }
+                    
+                    &.menu-arrow::after {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+        
+        .content-page {
+            margin-left: $main-nav-width !important;
+            width: calc(100% - $main-nav-width) !important;
+            transition: none !important;
+        }
+        
+        .topbar {
+            padding-left: 0 !important;
+        }
+    }
+}
+
+// Hide any toggle buttons
+.button-toggle-menu, 
+.button-sm-hover {
+    display: none !important;
+}
+
 // Logo
 .logo-box {
      position: sticky;

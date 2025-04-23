@@ -1,3 +1,26 @@
+// Insert this at the beginning of the file
+(function() {
+    // Force sidebar to always be in expanded state
+    document.addEventListener('DOMContentLoaded', function() {
+        // Force menu size attribute
+        document.documentElement.setAttribute('data-menu-size', 'default');
+        
+        // Override any attempts to change menu size
+        Object.defineProperty(document.documentElement.dataset, 'menuSize', {
+            get: function() { return 'default'; },
+            set: function() { return 'default'; },
+            configurable: false,
+        });
+        
+        // Remove toggle buttons
+        setTimeout(function() {
+            document.querySelectorAll('.button-toggle-menu, .button-sm-hover').forEach(function(el) {
+                if(el) el.remove();
+            });
+        }, 100);
+    });
+})();
+
 /**
 * Theme: Larkon - Responsive Bootstrap 5 Admin Dashboard
 * Author: Techzaa
@@ -9,6 +32,10 @@ class ThemeLayout {
      constructor() {
           this.html = document.getElementsByTagName('html')[0]
           this.config = window.config;
+          // Force the config to have default menu size
+          if (this.config && this.config.menu) {
+               this.config.menu.size = 'default';
+          }
      }
 
      // Main Nav
@@ -91,6 +118,8 @@ class ThemeLayout {
 
      initConfig() {
           this.config = JSON.parse(JSON.stringify(window.config));
+          // Force menu size to 'default' to keep sidebar expanded
+          this.config.menu.size = 'default';
           this.setSwitchFromConfig();
      }
 
@@ -101,6 +130,8 @@ class ThemeLayout {
      }
 
      changeMenuSize(size, save = true) {
+          // Always keep menu size as 'default' to ensure expanded sidebar
+          size = 'default';
           this.html.setAttribute('data-menu-size', size);
           if (save) {
                this.config.menu.size = size;
@@ -122,8 +153,10 @@ class ThemeLayout {
 
      resetTheme() {
           this.config = JSON.parse(JSON.stringify(window.defaultConfig));
+          // Force menu size to 'default' even after reset
+          this.config.menu.size = 'default';
           this.changeMenuColor(this.config.menu.color);
-          this.changeMenuSize(this.config.menu.size);
+          this.changeMenuSize('default');
           this.changeThemeMode(this.config.theme);
           this.changeTopbarColor(this.config.topbar.color);
      }
@@ -137,9 +170,11 @@ class ThemeLayout {
           });
 
           document.querySelectorAll('input[name=data-menu-size]').forEach(function (element) {
-               element.addEventListener('change', function (e) {
-                    self.changeMenuSize(element.value);
-               })
+               // Disable menu size radio buttons
+               element.disabled = true;
+               if (element.value === 'default') {
+                    element.checked = true;
+               }
           });
 
           document.querySelectorAll('input[name=data-bs-theme]').forEach(function (element) {
@@ -173,50 +208,16 @@ class ThemeLayout {
                });
           }
 
+          // Remove toggle button completely
           var menuToggleBtn = document.querySelector('.button-toggle-menu');
           if (menuToggleBtn) {
-               menuToggleBtn.addEventListener('click', function () {
-                    var configSize = self.config.menu.size;
-                    var size = self.html.getAttribute('data-menu-size', configSize);
-
-                    if (size !== 'hidden') {
-                         if (size === 'condensed') {
-                              self.changeMenuSize('hidden', false);
-                         } else {
-                              self.changeMenuSize('condensed', false);
-                         }
-                    } else {
-                         self.changeMenuSize(configSize, false);
-                    }
-
-                    // Todo: old implementation
-                    self.html.classList.toggle('sidebar-enable');
-               });
+               menuToggleBtn.remove();
           }
-
-          var hoverBtn = document.querySelectorAll('.button-sm-hover');
-          hoverBtn.forEach(function (element) {
-               element.addEventListener('click', function () {
-                    var configSize = self.config.menu.size;
-                    var size = self.html.getAttribute('data-menu-size', configSize);
-
-                    if (configSize === 'sm-hover-active') {
-                         if (size === 'sm-hover-active') {
-                              self.changeMenuSize('sm-hover', true);
-                         } else {
-                              self.changeMenuSize('sm-hover-active', true);
-                         }
-                    }
-
-                    if (configSize === 'sm-hover') {
-                         if (size === 'sm-hover') {
-                              self.changeMenuSize('sm-hover-active', true);
-                         } else {
-                              self.changeMenuSize('sm-hover', true);
-                         }
-                    }
-               });
-          })
+          
+          // Remove hover buttons
+          document.querySelectorAll('.button-sm-hover').forEach(function(el) {
+               if (el) el.remove();
+          });
      }
 
      showBackdrop() {
@@ -247,15 +248,15 @@ class ThemeLayout {
           var self = this;
 
           if (window.innerWidth <= 1140) {
-               self.changeMenuSize('hidden', false);
+               // For mobile, don't change menu size, just hide it off-screen
+               self.html.classList.remove('sidebar-enable');
           } else {
-               self.changeMenuSize(self.config.menu.size);
-               // self.changeLayoutMode(self.config.layout.mode);
+               // For desktop, ensure menu is always default size
+               self.changeMenuSize('default');
           }
      }
 
      setSwitchFromConfig() {
-
           sessionStorage.setItem('__LARKON_CONFIG__', JSON.stringify(this.config));
 
           document.querySelectorAll('.settings-bar input[type=radio]').forEach(function (checkbox) {
@@ -283,7 +284,21 @@ class ThemeLayout {
           this.initWindowSize();
           this._adjustLayout();
           this.setSwitchFromConfig();
+          
+          // Final check to ensure sidebar is in expanded state
+          setTimeout(() => {
+               this.html.setAttribute('data-menu-size', 'default');
+          }, 500);
      }
 }
 
-new ThemeLayout().init();
+// Wrap the initialization in a window.onload event to ensure all CSS is loaded
+window.addEventListener('load', function() {
+    // Minor delay to ensure CSS is fully applied
+    setTimeout(function() {
+        new ThemeLayout().init();
+    }, 100);
+});
+
+// Comment out the immediate initialization
+// new ThemeLayout().init();

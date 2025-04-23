@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ['title' => 'Categories List'])
+@extends('layouts.vertical', ['title' => 'Category C - Common and Inexpensive Drugs'])
 
 @section('content')
 
@@ -9,7 +9,7 @@
                 <div class="rounded bg-secondary-subtle d-flex align-items-center justify-content-center mx-auto">
                     <img src="/images/product/p-1.png" alt="" class="avatar-xl">
                 </div>
-                <h4 class="mt-3 mb-0">Fashion Categories</h4>
+                <h4 class="mt-3 mb-0">Common and Inexpensive Drugs</h4>
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
                 <div class="rounded bg-primary-subtle d-flex align-items-center justify-content-center mx-auto">
                     <img src="/images/product/p-6.png" alt="" class="avatar-xl">
                 </div>
-                <h4 class="mt-3 mb-0">Electronics Headphone</h4>
+                <h4 class="mt-3 mb-0">Over-the-Counter Medications</h4>
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@
                 <div class="rounded bg-warning-subtle d-flex align-items-center justify-content-center mx-auto">
                     <img src="/images/product/p-7.png" alt="" class="avatar-xl">
                 </div>
-                <h4 class="mt-3 mb-0">Foot Wares</h4>
+                <h4 class="mt-3 mb-0">Generic Medications</h4>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@
                 <div class="rounded bg-info-subtle d-flex align-items-center justify-content-center mx-auto">
                     <img src="/images/product/p-9.png" alt="" class="avatar-xl">
                 </div>
-                <h4 class="mt-3 mb-0">Eye Ware & Sunglass</h4>
+                <h4 class="mt-3 mb-0">Basic Care Products</h4>
             </div>
         </div>
     </div>
@@ -51,7 +51,7 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center gap-1">
-                <h4 class="card-title flex-grow-1">All Categories List</h4>
+                <h4 class="card-title flex-grow-1">Common and Inexpensive Drugs</h4>
 
                 <a href="{{ route('third', ['general', 'products', 'create'])}}" class="btn btn-sm btn-primary">
                     Add Product
@@ -84,7 +84,6 @@
                                 </th>
                                 <th>Categories</th>
                                 <th>Starting Price</th>
-                                <th>Create by</th>
                                 <th>ID</th>
                                 <th>Product Stock</th>
                                 <th>Action</th>
@@ -103,14 +102,12 @@
                                         <div class="rounded bg-light avatar-md d-flex align-items-center justify-content-center">
                                             <img src="/images/product/p-1.png" alt="" class="avatar-md">
                                         </div>
-                                        <p class="text-dark fw-medium fs-15 mb-0">Fashion Men , Women & Kid's</p>
+                                        <p class="text-dark fw-medium fs-15 mb-0">Ibuprofen (Advil, Motrin)</p>
                                     </div>
-
                                 </td>
-                                <td>$80 to $400</td>
-                                <td>Seller</td>
-                                <td>FS16276</td>
-                                <td>46233</td>
+                                <td>$10 for a bottle of 100 tablets</td>
+                                <td>IB10000</td>
+                                <td>5000</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -123,8 +120,8 @@
                             <tr>
                                 <td>
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="customCheck2">
-                                        <label class="form-check-label" for="customCheck2">&nbsp;</label>
+                                        <input type="checkbox" class="form-check-input" id="customCheck3">
+                                        <label class="form-check-label" for="customCheck3">&nbsp;</label>
                                     </div>
                                 </td>
                                 <td>
@@ -133,15 +130,13 @@
                                             <img src="/images/product/p-2.png" alt="" class="avatar-md">
                                         </div>
                                         <div>
-                                            <p class="text-dark fw-medium fs-15 mb-0">Women Hand Bag</p>
+                                            <p class="text-dark fw-medium fs-15 mb-0">Acetaminophen (Tylenol)</p>
                                         </div>
                                     </div>
-
                                 </td>
-                                <td>$120 to $500</td>
-                                <td>Admin</td>
-                                <td>HB73029</td>
-                                <td>2739</td>
+                                <td>$10 for a bottle of 100 tablets</td>
+                                <td>AC10000</td>
+                                <td>4800</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -151,12 +146,11 @@
                                 </td>
                             </tr>
 
-
                             <tr>
                                 <td>
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="customCheck2">
-                                        <label class="form-check-label" for="customCheck2">&nbsp;</label>
+                                        <input type="checkbox" class="form-check-input" id="customCheck4">
+                                        <label class="form-check-label" for="customCheck4">&nbsp;</label>
                                     </div>
                                 </td>
                                 <td>
@@ -165,15 +159,13 @@
                                             <img src="/images/product/p-4.png" alt="" class="avatar-md">
                                         </div>
                                         <div>
-                                            <p class="text-dark fw-medium fs-15 mb-0">Cap and Hat</p>
+                                            <p class="text-dark fw-medium fs-15 mb-0">Amoxicillin</p>
                                         </div>
                                     </div>
-
                                 </td>
-                                <td>$50 to $200</td>
-                                <td>Admin</td>
-                                <td>CH492-9</td>
-                                <td>1829</td>
+                                <td>$10 to $20 for a typical course of treatment</td>
+                                <td>AM20000</td>
+                                <td>3500</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -186,8 +178,8 @@
                             <tr>
                                 <td>
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="customCheck2">
-                                        <label class="form-check-label" for="customCheck2">&nbsp;</label>
+                                        <input type="checkbox" class="form-check-input" id="customCheck5">
+                                        <label class="form-check-label" for="customCheck5">&nbsp;</label>
                                     </div>
                                 </td>
                                 <td>
@@ -196,15 +188,13 @@
                                             <img src="/images/product/p-6.png" alt="" class="avatar-md">
                                         </div>
                                         <div>
-                                            <p class="text-dark fw-medium fs-15 mb-0">Electronics Headphone</p>
+                                            <p class="text-dark fw-medium fs-15 mb-0">Lisinopril</p>
                                         </div>
                                     </div>
-
                                 </td>
-                                <td>$100 to $700</td>
-                                <td>Seller</td>
-                                <td>EC23818</td>
-                                <td>1902</td>
+                                <td>$4 to $10 for a month's supply</td>
+                                <td>LS10000</td>
+                                <td>2900</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -214,12 +204,11 @@
                                 </td>
                             </tr>
 
-
                             <tr>
                                 <td>
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="customCheck2">
-                                        <label class="form-check-label" for="customCheck2">&nbsp;</label>
+                                        <input type="checkbox" class="form-check-input" id="customCheck6">
+                                        <label class="form-check-label" for="customCheck6">&nbsp;</label>
                                     </div>
                                 </td>
                                 <td>
@@ -228,106 +217,13 @@
                                             <img src="/images/product/p-7.png" alt="" class="avatar-md">
                                         </div>
                                         <div>
-                                            <p class="text-dark fw-medium fs-15 mb-0">Foot Wares</p>
+                                            <p class="text-dark fw-medium fs-15 mb-0">Metformin</p>
                                         </div>
                                     </div>
-
                                 </td>
-                                <td>$70 to $400</td>
-                                <td>Seller</td>
-                                <td>FW11009</td>
-                                <td>2733</td>
-                                <td>
-                                    <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="customCheck2">
-                                        <label class="form-check-label" for="customCheck2">&nbsp;</label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                        <div class="rounded bg-light avatar-md d-flex align-items-center justify-content-center">
-                                            <img src="/images/product/p-8.png" alt="" class="avatar-md">
-                                        </div>
-                                        <div>
-                                            <p class="text-dark fw-medium fs-15 mb-0">Wallet Categories</p>
-                                        </div>
-                                    </div>
-
-                                </td>
-                                <td>$120 to $300</td>
-                                <td>Admin</td>
-                                <td>WL38299</td>
-                                <td>890</td>
-                                <td>
-                                    <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="customCheck2">
-                                        <label class="form-check-label" for="customCheck2">&nbsp;</label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                        <div class="rounded bg-light avatar-md d-flex align-items-center justify-content-center">
-                                            <img src="/images/product/p-11.png" alt="" class="avatar-md">
-                                        </div>
-                                        <div>
-                                            <p class="text-dark fw-medium fs-15 mb-0">Electronics Watch</p>
-                                        </div>
-                                    </div>
-
-                                </td>
-                                <td>$60 to $400</td>
-                                <td>Seller</td>
-                                <td>SM37817</td>
-                                <td>250</td>
-                                <td>
-                                    <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="customCheck2">
-                                        <label class="form-check-label" for="customCheck2">&nbsp;</label>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center gap-2">
-                                        <div class="rounded bg-light avatar-md d-flex align-items-center justify-content-center">
-                                            <img src="/images/product/p-9.png" alt="" class="avatar-md">
-                                        </div>
-                                        <div>
-                                            <p class="text-dark fw-medium fs-15 mb-0">Eye Ware & Sunglass</p>
-                                        </div>
-                                    </div>
-
-                                </td>
-                                <td>$70 to $500</td>
-                                <td>Admin</td>
-                                <td>EG37878</td>
-                                <td>1900</td>
+                                <td>$4 to $10 for a month's supply</td>
+                                <td>MF10000</td>
+                                <td>3200</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>

@@ -41,7 +41,6 @@
                                 <th>Price</th>
                                 <th>Stock</th>
                                 <th>Disease Type</th>
-                                <th>Rating</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -65,13 +64,12 @@
                                     </div>
 
                                 </td>
-                                <td>Rs. 2,50,000</td>
+                                <td>$3,125.00</td>
                                 <td>
-                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">486 Item</span> Left</p>
+                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">15 Items</span> Left</p>
                                     <p class="mb-0 text-muted">155 Sold</p>
                                 </td>
-                                <td> Tyrosinemia Type 1</td>
-                                <td> <span class="badge p-1 bg-light text-dark fs-12 me-1"><i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> 4.5</span> 55 Review</td>
+                                <td>Tyrosinemia Type 1</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -100,13 +98,12 @@
                                     </div>
 
                                 </td>
-                                <td>Rs. 4,50,000</td>
+                                <td>$5,625.00</td>
                                 <td>
-                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">784 Item</span> Left</p>
+                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">12 Items</span> Left</p>
                                     <p class="mb-0 text-muted">674 Sold</p>
                                 </td>
-                                <td> Gaucher's Disease</td>
-                                <td> <span class="badge p-1 bg-light text-dark fs-12 me-1"><i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> 4.1</span> 143 Review</td>
+                                <td>Gaucher's Disease</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -134,13 +131,12 @@
                                     </div>
 
                                 </td>
-                                <td>Rs. 2,20,000</td>
+                                <td>$2,750.00</td>
                                 <td>
-                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">769 Item</span> Left</p>
+                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">18 Items</span> Left</p>
                                     <p class="mb-0 text-muted">180 Sold</p>
                                 </td>
-                                <td> Wilson’s Disease</td>
-                                <td> <span class="badge p-1 bg-light text-dark fs-12 me-1"><i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> 4.4</span> 174 Review</td>
+                                <td>Wilson's Disease</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -169,13 +165,12 @@
                                     </div>
 
                                 </td>
-                                <td>Rs. 1,50,000</td>
+                                <td>$1,875.00</td>
                                 <td>
-                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">571 Item</span> Left</p>
+                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">24 Items</span> Left</p>
                                     <p class="mb-0 text-muted">87 Sold</p>
                                 </td>
-                                <td> Dravet and Lennox-Gastaut Syndromes</td>
-                                <td> <span class="badge p-1 bg-light text-dark fs-12 me-1"><i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> 4.2</span> 23 Review</td>
+                                <td>Dravet and Lennox-Gastaut Syndromes</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -205,13 +200,12 @@
                                     </div>
 
                                 </td>
-                                <td>Rs. 2,00,00,000</td>
+                                <td>$250,000.00</td>
                                 <td>
-                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">241 Item</span> Left</p>
+                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">3 Items</span> Left</p>
                                     <p class="mb-0 text-muted">342 Sold</p>
                                 </td>
-                                <td> Paroxysmal Nocturnal Hemoglobinuria (PNH)</td>
-                                <td> <span class="badge p-1 bg-light text-dark fs-12 me-1"><i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> 4.4</span> 109 Review</td>
+                                <td>Paroxysmal Nocturnal Hemoglobinuria (PNH)</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -241,13 +235,12 @@
                                     </div>
 
                                 </td>
-                                <td>Rs. 2,31,00,000</td>
+                                <td>$288,750.00</td>
                                 <td>
-                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">821 Item</span> Left</p>
+                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">2 Items</span> Left</p>
                                     <p class="mb-0 text-muted">231 Sold</p>
                                 </td>
-                                <td> Paroxysmal Nocturnal Hemoglobinuria (PNH)</td>
-                                <td> <span class="badge p-1 bg-light text-dark fs-12 me-1"><i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> 4.2</span> 200 Review</td>
+                                <td>Paroxysmal Nocturnal Hemoglobinuria (PNH)</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -277,13 +270,12 @@
                                     </div>
 
                                 </td>
-                                <td>Rs. 89,00,000</td>
+                                <td>$111,250.00</td>
                                 <td>
-                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">321 Item</span> Left</p>
+                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">7 Items</span> Left</p>
                                     <p class="mb-0 text-muted">681 Sold</p>
                                 </td>
-                                <td> Pompe Disease</td>
-                                <td> <span class="badge p-1 bg-light text-dark fs-12 me-1"><i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> 4.5</span> 321 Review</td>
+                                <td>Pompe Disease</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -312,13 +304,12 @@
                                     </div>
 
                                 </td>
-                                <td>Rs. 1,32,00,000</td>
+                                <td>$165,000.00</td>
                                 <td>
-                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">190 Item</span> Left</p>
+                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">5 Items</span> Left</p>
                                     <p class="mb-0 text-muted">212 Sold</p>
                                 </td>
-                                <td> Mucopolysaccharidosis I (MPS I)</td>
-                                <td> <span class="badge p-1 bg-light text-dark fs-12 me-1"><i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> 4.1</span> 190 Review</td>
+                                <td>Mucopolysaccharidosis I (MPS I)</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -347,13 +338,12 @@
                                     </div>
 
                                 </td>
-                                <td>Rs. 77,00,000</td>
+                                <td>$96,250.00</td>
                                 <td>
-                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">784 Item</span> Left</p>
+                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">8 Items</span> Left</p>
                                     <p class="mb-0 text-muted">443 Sold</p>
                                 </td>
-                                <td> Mucopolysaccharidosis II (MPS II)</td>
-                                <td> <span class="badge p-1 bg-light text-dark fs-12 me-1"><i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> 3.5</span> 298 Review</td>
+                                <td>Mucopolysaccharidosis II (MPS II)</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -382,13 +372,12 @@
                                     </div>
 
                                 </td>
-                                <td>Rs. 1,10,00,000</td>
+                                <td>$137,500.00</td>
                                 <td>
-                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">650 Item</span> Left</p>
+                                    <p class="mb-1 text-muted"><span class="text-dark fw-medium">6 Items</span> Left</p>
                                     <p class="mb-0 text-muted">365 Sold</p>
                                 </td>
-                                <td> Maroteaux-Lamy Syndrome (MPS VI)</td>
-                                <td> <span class="badge p-1 bg-light text-dark fs-12 me-1"><i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> 4.1</span> 156 Review</td>
+                                <td>Maroteaux-Lamy Syndrome (MPS VI)</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>

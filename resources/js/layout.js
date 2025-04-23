@@ -181,12 +181,12 @@ class ThemeLayout {
 
                     if (size !== 'hidden') {
                          if (size === 'condensed') {
-                              self.changeMenuSize(configSize == 'condensed' ? 'default' : configSize, false);
+                              self.changeMenuSize('hidden', false);
                          } else {
                               self.changeMenuSize('condensed', false);
                          }
                     } else {
-                         self.showBackdrop();
+                         self.changeMenuSize(configSize, false);
                     }
 
                     // Todo: old implementation

@@ -54,7 +54,12 @@
                                     </div>
                                 </td>
                                 <td><a href="javascript: void(0);" class="text-body">#INV2540</a> </td>
-                                <td><img src="/images/users/avatar-2.jpg" class="avatar-sm rounded-circle me-2" alt="..."> Michael A. Miner</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Michael A. Miner</h5>
+                                        <p class="mb-0 text-muted fs-13">Order #INV2540</p>
+                                    </div>
+                                </td>
                                 <td> T-shirt , Wallet</td>
                                 <td> <span class="badge bg-success text-white py-1 px-2">Items Received</span> </td>
                                 <td> 07 Jan, 2023</td>
@@ -63,9 +68,9 @@
                                 <td> <span class="badge bg-success-subtle text-success py-1 px-2">Completed</span> </td>
                                 <td>
                                     <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-light btn-sm"><i class="bx bx-show fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -78,7 +83,12 @@
                                     </div>
                                 </td>
                                 <td><a href="javascript: void(0);" class="text-body">#INV3924</a> </td>
-                                <td><img src="/images/users/avatar-3.jpg" class="avatar-sm rounded-circle me-2" alt="..."> Theresa T. Brose</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Theresa T. Brose</h5>
+                                        <p class="mb-0 text-muted fs-13">Order #INV3924</p>
+                                    </div>
+                                </td>
                                 <td>Golden Dress , Sunglass</td>
                                 <td> <span class="badge bg-success text-white py-1 px-2">Items Received</span> </td>
                                 <td> 03 Dec, 2023</td>
@@ -87,9 +97,9 @@
                                 <td> <span class="badge bg-danger-subtle text-danger px-2 py-1">Cancel</span> </td>
                                 <td>
                                     <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-light btn-sm"><i class="bx bx-show fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -102,7 +112,12 @@
                                     </div>
                                 </td>
                                 <td><a href="javascript: void(0);" class="text-body">#INV5032</a> </td>
-                                <td><img src="/images/users/avatar-4.jpg" class="avatar-sm rounded-circle me-2" alt="..."> James L. Erickson</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">James L. Erickson</h5>
+                                        <p class="mb-0 text-muted fs-13">Order #INV5032</p>
+                                    </div>
+                                </td>
                                 <td> Shoes , Cargo Pent</td>
                                 <td> <span class="badge bg-success text-white py-1 px-2">Items Received</span> </td>
                                 <td> 28 Sep, 2023 </td>
@@ -111,9 +126,9 @@
                                 <td><span class="badge bg-success-subtle text-success py-1 px-2">Completed</span></td>
                                 <td>
                                     <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-light btn-sm"><i class="bx bx-show fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -125,7 +140,12 @@
                                     </div>
                                 </td>
                                 <td><a href="javascript: void(0);" class="text-body">#INV1695</a> </td>
-                                <td><img src="/images/users/avatar-5.jpg" class="avatar-sm rounded-circle me-2" alt="..."> Lily W. Wilson</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Lily W. Wilson</h5>
+                                        <p class="mb-0 text-muted fs-13">Order #INV1695</p>
+                                    </div>
+                                </td>
                                 <td> Watch , T-shirt </td>
                                 <td> <span class="badge bg-success text-white py-1 px-2">Items Received</span> </td>
                                 <td>10 Aug, 2023</td>
@@ -134,9 +154,9 @@
                                 <td><span class="badge bg-primary-subtle text-primary py-1 px-2">Pending</span></td>
                                 <td>
                                     <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-light btn-sm"><i class="bx bx-show fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -148,7 +168,12 @@
                                     </div>
                                 </td>
                                 <td><a href="javascript: void(0);" class="text-body">#INV8473</a> </td>
-                                <td><img src="/images/users/avatar-6.jpg" class="avatar-sm rounded-circle me-2" alt="..."> Sarah M. Brooks</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Sarah M. Brooks</h5>
+                                        <p class="mb-0 text-muted fs-13">Order #INV8473</p>
+                                    </div>
+                                </td>
                                 <td> Hand Bag , Watch</td>
                                 <td> <span class="badge bg-success text-white py-1 px-2">Items Received</span> </td>
                                 <td> 22 May, 2023 </td>
@@ -157,9 +182,9 @@
                                 <td> <span class="badge bg-danger-subtle text-danger px-2 py-1 ">Cancel</span></td>
                                 <td>
                                     <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-light btn-sm"><i class="bx bx-show fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -171,7 +196,12 @@
                                     </div>
                                 </td>
                                 <td><a href="javascript: void(0);" class="text-body">#INV2150</a> </td>
-                                <td><img src="/images/users/avatar-7.jpg" class="avatar-sm rounded-circle me-2" alt="..."> Joe K. Hall</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Joe K. Hall</h5>
+                                        <p class="mb-0 text-muted fs-13">Order #INV2150</p>
+                                    </div>
+                                </td>
                                 <td>Headphone , Dress</td>
                                 <td> <span class="badge bg-success text-white py-1 px-2">Items Received</span> </td>
                                 <td>15 Mar, 2023</td>
@@ -180,9 +210,9 @@
                                 <td> <span class="badge bg-success-subtle text-success py-1 px-2">Completed</span> </td>
                                 <td>
                                     <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-light btn-sm"><i class="bx bx-show fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -194,7 +224,12 @@
                                     </div>
                                 </td>
                                 <td><a href="javascript: void(0);" class="text-body">#INV5636</a> </td>
-                                <td><img src="/images/users/avatar-8.jpg" class="avatar-sm rounded-circle me-2" alt="...">Ralph Hueber</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Ralph Hueber</h5>
+                                        <p class="mb-0 text-muted fs-13">Order #INV5636</p>
+                                    </div>
+                                </td>
                                 <td>Headphone</td>
                                 <td> <span class="badge bg-success text-white py-1 px-2">Items Received</span> </td>
                                 <td>19 Dec, 2023</td>
@@ -203,9 +238,9 @@
                                 <td> <span class="badge bg-success-subtle text-success py-1 px-2">Completed</span> </td>
                                 <td>
                                     <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-light btn-sm"><i class="bx bx-show fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -217,7 +252,12 @@
                                     </div>
                                 </td>
                                 <td><a href="javascript: void(0);" class="text-body">#INV2940</a> </td>
-                                <td><img src="/images/users/avatar-9.jpg" class="avatar-sm rounded-circle me-2" alt="...">Sarah Drescher</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Sarah Drescher</h5>
+                                        <p class="mb-0 text-muted fs-13">Order #INV2940</p>
+                                    </div>
+                                </td>
                                 <td>Cap , Sunglass , Hand Bag</td>
                                 <td> <span class="badge bg-success text-white py-1 px-2">Items Received</span> </td>
                                 <td>11 Jun, 2023</td>
@@ -226,9 +266,9 @@
                                 <td> <span class="badge bg-success-subtle text-success py-1 px-2">Completed</span> </td>
                                 <td>
                                     <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-light btn-sm"><i class="bx bx-show fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -240,7 +280,12 @@
                                     </div>
                                 </td>
                                 <td><a href="javascript: void(0);" class="text-body">#INV9027</a> </td>
-                                <td><img src="/images/users/avatar-10.jpg" class="avatar-sm rounded-circle me-2" alt="...">Leonie Meister</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Leonie Meister</h5>
+                                        <p class="mb-0 text-muted fs-13">Order #INV9027</p>
+                                    </div>
+                                </td>
                                 <td>Headphone , T-shirt</td>
                                 <td> <span class="badge bg-success text-white py-1 px-2">Items Received</span> </td>
                                 <td>19 Mar, 2023 </td>
@@ -249,9 +294,9 @@
                                 <td><span class="badge bg-primary-subtle text-primary py-1 px-2">Pending</span></td>
                                 <td>
                                     <div class="d-flex gap-2">
-                                        <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                        <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-light btn-sm"><i class="bx bx-show fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="#!" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
                                     </div>
                                 </td>
                             </tr>

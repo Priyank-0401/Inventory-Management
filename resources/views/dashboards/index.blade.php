@@ -1,13 +1,10 @@
-@extends('layouts.vertical', ['title' => 'Dashboard'])
+@extends('layouts.vertical', ['title' => 'Pharmacy Dashboard'])
 
 @section('content')
     <div class="row">
         <div class="col-xxl-5">
             <div class="row">
                 <div class="col-12">
-                    <!-- <div class="alert alert-primary text-truncate mb-3" role="alert">
-                        We regret to inform you that our server is currently experiencing technical difficulties.
-                    </div> -->
                 </div>
 
                 <div class="col-md-6">
@@ -21,15 +18,15 @@
                                     </div>
                                 </div> <!-- end col -->
                                 <div class="col-6 text-end">
-                                    <p class="text-muted mb-0 text-truncate">Total Orders</p>
-                                    <h3 class="text-dark mt-1 mb-0">13, 647</h3>
+                                    <p class="text-muted mb-0 text-truncate">Total Prescriptions</p>
+                                    <h3 class="text-dark mt-1 mb-0">8,472</h3>
                                 </div> <!-- end col -->
                             </div> <!-- end row-->
                         </div> <!-- end card body -->
                         <div class="card-footer py-2 bg-light bg-opacity-50">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div>
-                                    <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 2.3%</span>
+                                    <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 3.2%</span>
                                     <span class="text-muted ms-1 fs-12">Last Week</span>
                                 </div>
                                 <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
@@ -43,19 +40,19 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="avatar-md bg-soft-primary rounded">
-                                        <i class="bx bx-award avatar-title fs-24 text-primary"></i>
+                                        <iconify-icon icon="solar:pill-bold-duotone" class="avatar-title fs-32 text-primary"></iconify-icon>
                                     </div>
                                 </div> <!-- end col -->
                                 <div class="col-6 text-end">
-                                    <p class="text-muted mb-0 text-truncate">New Leads</p>
-                                    <h3 class="text-dark mt-1 mb-0">9, 526</h3>
+                                    <p class="text-muted mb-0 text-truncate">Total Products</p>
+                                    <h3 class="text-dark mt-1 mb-0">1,284</h3>
                                 </div> <!-- end col -->
                             </div> <!-- end row-->
                         </div> <!-- end card body -->
                         <div class="card-footer py-2 bg-light bg-opacity-50">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div>
-                                    <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 8.1%</span>
+                                    <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 5.3%</span>
                                     <span class="text-muted ms-1 fs-12">Last Month</span>
                                 </div>
                                 <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
@@ -69,19 +66,19 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="avatar-md bg-soft-primary rounded">
-                                        <i class="bx bxs-backpack avatar-title fs-24 text-primary"></i>
+                                        <i class="bx bx-package avatar-title fs-32 text-primary"></i>
                                     </div>
                                 </div> <!-- end col -->
                                 <div class="col-6 text-end">
-                                    <p class="text-muted mb-0 text-truncate">Deals</p>
-                                    <h3 class="text-dark mt-1 mb-0">976</h3>
+                                    <p class="text-muted mb-0 text-truncate">Low Stock Items</p>
+                                    <h3 class="text-dark mt-1 mb-0">43</h3>
                                 </div> <!-- end col -->
                             </div> <!-- end row-->
                         </div> <!-- end card body -->
                         <div class="card-footer py-2 bg-light bg-opacity-50">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div>
-                                    <span class="text-danger"> <i class="bx bxs-down-arrow fs-12"></i> 0.3%</span>
+                                    <span class="text-danger"> <i class="bx bxs-down-arrow fs-12"></i> 8.4%</span>
                                     <span class="text-muted ms-1 fs-12">Last Month</span>
                                 </div>
                                 <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
@@ -95,19 +92,19 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="avatar-md bg-soft-primary rounded">
-                                        <i class="bx bx-dollar-circle avatar-title text-primary fs-24"></i>
+                                        <iconify-icon icon="solar:dollar-minimalistic-bold-duotone" class="avatar-title fs-32 text-primary"></iconify-icon>
                                     </div>
                                 </div> <!-- end col -->
                                 <div class="col-6 text-end">
-                                    <p class="text-muted mb-0 text-truncate">Booked Revenue</p>
-                                    <h3 class="text-dark mt-1 mb-0">$123.6k</h3>
+                                    <p class="text-muted mb-0 text-truncate">Total Revenue</p>
+                                    <h3 class="text-dark mt-1 mb-0">$352.8k</h3>
                                 </div> <!-- end col -->
                             </div> <!-- end row-->
                         </div> <!-- end card body -->
                         <div class="card-footer py-2 bg-light bg-opacity-50">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div>
-                                    <span class="text-danger"> <i class="bx bxs-down-arrow fs-12"></i> 10.6%</span>
+                                    <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 12.3%</span>
                                     <span class="text-muted ms-1 fs-12">Last Month</span>
                                 </div>
                                 <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
@@ -122,7 +119,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h4 class="card-title">Performance</h4>
+                        <h4 class="card-title">Sales by Category ($ in thousands)</h4>
                         <div>
                             <button type="button" class="btn btn-sm btn-outline-light">ALL</button>
                             <button type="button" class="btn btn-sm btn-outline-light">1M</button>
@@ -132,7 +129,25 @@
                     </div> <!-- end card-title-->
 
                     <div dir="ltr">
-                        <div id="dash-performance-chart" class="apex-charts"></div>
+                        <div id="dash-performance-chart" class="apex-charts" style="height: 300px;"></div>
+                        
+                        <div class="row text-center mt-3">
+                            <div class="col-4">
+                                <span class="d-inline-block rounded-circle mr-1" style="width: 10px; height: 10px; background-color: #3B82F6;"></span>
+                                <span class="text-muted">Category A</span>
+                                <h5 class="font-weight-bold mb-0">$2.6M</h5>
+                            </div>
+                            <div class="col-4">
+                                <span class="d-inline-block rounded-circle mr-1" style="width: 10px; height: 10px; background-color: #10B981;"></span>
+                                <span class="text-muted">Category B</span>
+                                <h5 class="font-weight-bold mb-0">$1.3M</h5>
+                            </div>
+                            <div class="col-4">
+                                <span class="d-inline-block rounded-circle mr-1" style="width: 10px; height: 10px; background-color: #F59E0B;"></span>
+                                <span class="text-muted">Category C</span>
+                                <h5 class="font-weight-bold mb-0">$0.7M</h5>
+                            </div>
+                        </div>
                     </div>
                 </div> <!-- end card body -->
             </div> <!-- end card -->
@@ -143,16 +158,20 @@
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Conversions</h5>
-                    <div id="conversions" class="apex-charts mb-2 mt-n2"></div>
+                    <h5 class="card-title">Inventory Distribution</h5>
+                    <div id="inventory-donut-chart" class="apex-charts mb-2 mt-n2" style="height: 240px;"></div>
                     <div class="row text-center">
-                        <div class="col-6">
-                            <p class="text-muted mb-2">This Week</p>
-                            <h3 class="text-dark mb-3">23.5k</h3>
+                        <div class="col-4">
+                            <p class="text-muted mb-2">Category A</p>
+                            <h3 class="text-dark mb-3">15%</h3>
                         </div> <!-- end col -->
-                        <div class="col-6">
-                            <p class="text-muted mb-2">Last Week</p>
-                            <h3 class="text-dark mb-3">41.05k</h3>
+                        <div class="col-4">
+                            <p class="text-muted mb-2">Category B</p>
+                            <h3 class="text-dark mb-3">42%</h3>
+                        </div> <!-- end col -->
+                        <div class="col-4">
+                            <p class="text-muted mb-2">Category C</p>
+                            <h3 class="text-dark mb-3">43%</h3>
                         </div> <!-- end col -->
                     </div> <!-- end row -->
                     <div class="text-center">
@@ -163,76 +182,57 @@
         </div> <!-- end left chart card -->
 
         <div class="col-lg-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Sessions by Country</h5>
-                    <div id="world-map-markers" style="height: 316px">
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-6">
-                            <p class="text-muted mb-2">This Week</p>
-                            <h3 class="text-dark mb-3">23.5k</h3>
-                        </div> <!-- end col -->
-                        <div class="col-6">
-                            <p class="text-muted mb-2">Last Week</p>
-                            <h3 class="text-dark mb-3">41.05k</h3>
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
-                </div>
-            </div> <!-- end card-->
-        </div> <!-- end col -->
-
-        <div class="col-lg-4">
             <div class="card card-height-100">
                 <div class="card-header d-flex align-items-center justify-content-between gap-2">
-                    <h4 class="card-title flex-grow-1">Top Pages</h4>
-
-                    <a href="#" class="btn btn-sm btn-soft-primary">View All</a>
+                    <h4 class="card-title flex-grow-1">Smart Carton Alerts</h4>
+                    <a href="#" class="btn btn-sm btn-soft-danger">View All Alerts</a>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-hover table-nowrap table-centered m-0">
                         <thead class="bg-light bg-opacity-50">
                         <tr>
-                            <th class="text-muted ps-3">Page Path</th>
-                            <th class="text-muted">Page Views</th>
-                            <th class="text-muted">Exit Rate</th>
+                            <th class="text-muted ps-3">Shipment ID</th>
+                            <th class="text-muted">Medication</th>
+                            <th class="text-muted">Issue Type</th>
+                            <th class="text-muted">Time</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td class="ps-3"><a href="#" class="text-muted">larkon/ecommerce.html</a></td>
-                            <td>465</td>
-                            <td><span class="badge badge-soft-success">4.4%</span></td>
+                            <td class="ps-3"><a href="#" class="text-reset">#SC7845</a></td>
+                            <td>Zolgensma</td>
+                            <td><span class="badge bg-danger">Temperature Alert</span></td>
+                            <td>10 min ago</td>
                         </tr>
                         <tr>
-                            <td class="ps-3"><a href="#" class="text-muted">larkon/dashboard.html</a></td>
-                            <td> 426</td>
-                            <td><span class="badge badge-soft-danger">20.4%</span></td>
+                            <td class="ps-3"><a href="#" class="text-reset">#SC6532</a></td>
+                            <td>Luxturna</td>
+                            <td><span class="badge bg-warning">Shock Detection</span></td>
+                            <td>1 hour ago</td>
                         </tr>
                         <tr>
-                            <td class="ps-3"><a href="#" class="text-muted">larkon/chat.html</a></td>
-                            <td>254</td>
-                            <td><span class="badge badge-soft-warning">12.25%</span></td>
+                            <td class="ps-3"><a href="#" class="text-reset">#SC9021</a></td>
+                            <td>Soliris</td>
+                            <td><span class="badge bg-danger">Tamperature Alert</span></td>
+                            <td>3 hours ago</td>
                         </tr>
                         <tr>
-                            <td class="ps-3"><a href="#" class="text-muted">larkon/auth-login.html</a></td>
-                            <td> 3369</td>
-                            <td><span class="badge badge-soft-success">5.2%</span></td>
+                            <td class="ps-3"><a href="#" class="text-reset">#SC3478</a></td>
+                            <td>Kymriah</td>
+                            <td><span class="badge bg-warning">Humidity Alert</span></td>
+                            <td>5 hours ago</td>
                         </tr>
                         <tr>
-                            <td class="ps-3"><a href="#" class="text-muted">larkon/email.html</a></td>
-                            <td>985</td>
-                            <td><span class="badge badge-soft-danger">64.2%</span></td>
+                            <td class="ps-3"><a href="#" class="text-reset">#SC5289</a></td>
+                            <td>Spinraza</td>
+                            <td><span class="badge bg-danger">Temperature Alert</span></td>
+                            <td>Yesterday</td>
                         </tr>
                         <tr>
-                            <td class="ps-3"><a href="#" class="text-muted">larkon/social.html</a></td>
-                            <td>653</td>
-                            <td><span class="badge badge-soft-success">2.4%</span></td>
-                        </tr>
-                        <tr>
-                            <td class="ps-3"><a href="#" class="text-muted">larkon/blog.html</a></td>
-                            <td>478</td>
-                            <td><span class="badge badge-soft-danger">1.4%</span></td>
+                            <td class="ps-3"><a href="#" class="text-reset">#SC4176</a></td>
+                            <td>Kymriah</td>
+                            <td><span class="badge bg-warning">Shock Detection</span></td>
+                            <td>2 days ago</td>
                         </tr>
                         </tbody>
                     </table>
@@ -240,80 +240,57 @@
             </div>
         </div> <!-- end col -->
 
-        <div class="col-xl-4 d-none">
-            <div class="card">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                    <h4 class="card-title">Recent Transactions</h4>
-                    <div>
-                        <a href="#!" class="btn btn-sm btn-primary">
-                            <i class="bx bx-plus me-1"></i>Add
-                        </a>
-                    </div>
-                </div> <!-- end card-header-->
-                <div class="card-body p-0">
-                    <div class="px-3" data-simplebar style="max-height: 398px;">
-                        <table class="table table-hover mb-0 table-centered">
-                            <tbody>
-                            <tr>
-                                <td>24 April, 2024</td>
-                                <td>$120.55</td>
-                                <td><span class="badge bg-success">Cr</span></td>
-                                <td>Commisions</td>
-                            </tr>
-                            <tr>
-                                <td>24 April, 2024</td>
-                                <td>$9.68</td>
-                                <td><span class="badge bg-success">Cr</span></td>
-                                <td>Affiliates</td>
-                            </tr>
-                            <tr>
-                                <td>20 April, 2024</td>
-                                <td>$105.22</td>
-                                <td><span class="badge bg-danger">Dr</span></td>
-                                <td>Grocery</td>
-                            </tr>
-                            <tr>
-                                <td>18 April, 2024</td>
-                                <td>$80.59</td>
-                                <td><span class="badge bg-success">Cr</span></td>
-                                <td>Refunds</td>
-                            </tr>
-                            <tr>
-                                <td>18 April, 2024</td>
-                                <td>$750.95</td>
-                                <td><span class="badge bg-danger">Dr</span></td>
-                                <td>Bill Payments</td>
-                            </tr>
-                            <tr>
-                                <td>17 April, 2024</td>
-                                <td>$455.62</td>
-                                <td><span class="badge bg-danger">Dr</span></td>
-                                <td>Electricity</td>
-                            </tr>
-                            <tr>
-                                <td>17 April, 2024</td>
-                                <td>$102.77</td>
-                                <td><span class="badge bg-success">Cr</span></td>
-                                <td>Interest</td>
-                            </tr>
-                            <tr>
-                                <td>16 April, 2024</td>
-                                <td>$79.49</td>
-                                <td><span class="badge bg-success">Cr</span></td>
-                                <td>Refunds</td>
-                            </tr>
-                            <tr>
-                                <td>05 April, 2024</td>
-                                <td>$980.00</td>
-                                <td><span class="badge bg-danger">Dr</span></td>
-                                <td>Shopping</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div> <!-- end card body -->
-            </div> <!-- end card-->
-        </div> <!-- end col-->
+        <div class="col-lg-4">
+            <div class="card card-height-100">
+                <div class="card-header d-flex align-items-center justify-content-between gap-2">
+                    <h4 class="card-title flex-grow-1">Out of Stock Alerts</h4>
+                    <a href="#" class="btn btn-sm btn-soft-primary">Reorder All</a>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover table-nowrap table-centered m-0">
+                        <thead class="bg-light bg-opacity-50">
+                        <tr>
+                            <th class="text-muted ps-3">Product</th>
+                            <th class="text-muted">Category</th>
+                            <th class="text-muted">Priority</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="ps-3"><a href="#" class="text-reset">Zolgensma</a></td>
+                            <td>A</td>
+                            <td><span class="badge badge-soft-danger">High</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ps-3"><a href="#" class="text-reset">Luxturna</a></td>
+                            <td>A</td>
+                            <td><span class="badge badge-soft-danger">High</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ps-3"><a href="#" class="text-reset">Herceptin</a></td>
+                            <td>B</td>
+                            <td><span class="badge badge-soft-warning">Medium</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ps-3"><a href="#" class="text-reset">Insulin</a></td>
+                            <td>B</td>
+                            <td><span class="badge badge-soft-danger">High</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ps-3"><a href="#" class="text-reset">Amoxicillin</a></td>
+                            <td>C</td>
+                            <td><span class="badge badge-soft-warning">Medium</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ps-3"><a href="#" class="text-reset">Metformin</a></td>
+                            <td>C</td>
+                            <td><span class="badge badge-soft-success">Low</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div> <!-- end col -->
     </div> <!-- end row -->
 
     <div class="row">
@@ -336,25 +313,25 @@
                         <thead class="bg-light bg-opacity-50">
                         <tr>
                             <th class="ps-3">
-                                Order ID.
+                                Order ID
                             </th>
                             <th>
                                 Date
                             </th>
                             <th>
-                                Product
+                                Medication
                             </th>
                             <th>
                                 Customer Name
                             </th>
                             <th>
-                                Email ID
+                                Email
                             </th>
                             <th>
-                                Phone No.
+                                Phone
                             </th>
                             <th>
-                                Address
+                                Category
                             </th>
                             <th>
                                 Payment Type
@@ -368,19 +345,39 @@
                         <tbody>
                         <tr>
                             <td class="ps-3">
-                                <a href="apps-ecommerce-order-detail.html">#RB5625</a>
+                                <a href="#!">#RX5625</a>
                             </td>
                             <td>29 April 2024</td>
                             <td>
-                                <img src="/images/products/product-1(1).png" alt="product-1(1)"
+                                <img src="/images/product/p-1.png" alt="medication"
                                      class="img-fluid avatar-sm">
                             </td>
                             <td>
-                                <a href="#!">Anna M. Hines</a>
+                                <a href="#!">Robert Johnson</a>
                             </td>
-                            <td>anna.hines@mail.com</td>
-                            <td>(+1)-555-1564-261</td>
-                            <td>Burr Ridge/Illinois</td>
+                            <td>robert.j@example.com</td>
+                            <td>(+1)-555-3842-661</td>
+                            <td>Category A</td>
+                            <td>Insurance</td>
+                            <td>
+                                <i class="bx bxs-circle text-success me-1"></i>Completed
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ps-3">
+                                <a href="#!">#RX9652</a>
+                            </td>
+                            <td>25 April 2024</td>
+                            <td>
+                                <img src="/images/product/p-4.png" alt="medication"
+                                     class="img-fluid avatar-sm">
+                            </td>
+                            <td>
+                                <a href="#!">Sarah Miller</a>
+                            </td>
+                            <td>sarah.m@example.com</td>
+                            <td>(+1)-305-7842-259</td>
+                            <td>Category B</td>
                             <td>Credit Card</td>
                             <td>
                                 <i class="bx bxs-circle text-success me-1"></i>Completed
@@ -388,81 +385,61 @@
                         </tr>
                         <tr>
                             <td class="ps-3">
-                                <a href="apps-ecommerce-order-detail.html">#RB9652</a>
+                                <a href="#!">#RX5984</a>
                             </td>
                             <td>25 April 2024</td>
                             <td>
-                                <img src="/images/products/product-4.png" alt="product-4"
+                                <img src="/images/product/p-6.png" alt="medication"
                                      class="img-fluid avatar-sm">
                             </td>
                             <td>
-                                <a href="#!">Judith H. Fritsche</a>
+                                <a href="#!">John Thompson</a>
                             </td>
-                            <td>judith.fritsche.com</td>
-                            <td>(+57)-305-5579-759</td>
-                            <td>SULLIVAN/Kentucky</td>
-                            <td>Credit Card</td>
+                            <td>john.t@example.com</td>
+                            <td>(+1)-655-4587-93</td>
+                            <td>Category B</td>
+                            <td>Insurance</td>
                             <td>
                                 <i class="bx bxs-circle text-success me-1"></i>Completed
                             </td>
                         </tr>
                         <tr>
                             <td class="ps-3">
-                                <a href="apps-ecommerce-order-detail.html">#RB5984</a>
-                            </td>
-                            <td>25 April 2024</td>
-                            <td>
-                                <img src="/images/products/product-5.png" alt="product-5"
-                                     class="img-fluid avatar-sm">
-                            </td>
-                            <td>
-                                <a href="#!">Peter T. Smith</a>
-                            </td>
-                            <td>peter.smith@mail.com</td>
-                            <td>(+33)-655-5187-93</td>
-                            <td>Yreka/California</td>
-                            <td>Pay Pal</td>
-                            <td>
-                                <i class="bx bxs-circle text-success me-1"></i>Completed
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="ps-3">
-                                <a href="apps-ecommerce-order-detail.html">#RB3625</a>
+                                <a href="#!">#RX3625</a>
                             </td>
                             <td>21 April 2024</td>
                             <td>
-                                <img src="/images/products/product-6.png" alt="product-6"
+                                <img src="/images/product/p-7.png" alt="medication"
                                      class="img-fluid avatar-sm">
                             </td>
                             <td>
-                                <a href="#!">Emmanuel J. Delcid</a>
+                                <a href="#!">Maria Garcia</a>
                             </td>
                             <td>
-                                emmanuel.delicid@mail.com
+                                maria.g@example.com
                             </td>
-                            <td>(+30)-693-5553-637</td>
-                            <td>Atlanta/Georgia</td>
-                            <td>Pay Pal</td>
+                            <td>(+1)-693-3853-637</td>
+                            <td>Category C</td>
+                            <td>Cash</td>
                             <td>
                                 <i class="bx bxs-circle text-primary me-1"></i>Processing
                             </td>
                         </tr>
                         <tr>
                             <td class="ps-3">
-                                <a href="apps-ecommerce-order-detail.html">#RB8652</a>
+                                <a href="#!">#RX8652</a>
                             </td>
                             <td>18 April 2024</td>
                             <td>
-                                <img src="/images/products/product-1(2).png" alt="product-1(2)"
+                                <img src="/images/product/p-9.png" alt="medication"
                                      class="img-fluid avatar-sm">
                             </td>
                             <td>
-                                <a href="#!">William J. Cook</a>
+                                <a href="#!">David Wilson</a>
                             </td>
-                            <td>william.cook@mail.com</td>
-                            <td>(+91)-855-5446-150</td>
-                            <td>Rosenberg/Texas</td>
+                            <td>david.w@example.com</td>
+                            <td>(+1)-855-5746-150</td>
+                            <td>Category C</td>
                             <td>Credit Card</td>
                             <td>
                                 <i class="bx bxs-circle text-primary me-1"></i>Processing
@@ -482,7 +459,7 @@
                                 Showing
                                 <span class="fw-semibold">5</span>
                                 of
-                                <span class="fw-semibold">90,521</span>
+                                <span class="fw-semibold">8,472</span>
                                 orders
                             </div>
                         </div>
@@ -509,12 +486,108 @@
                     </div>
                 </div>
             </div>
-            <!-- end card -->
         </div>
-        <!-- end col -->
-    </div>
+    </div> <!-- end row -->
+
 @endsection
 
 @section('script')
-    @vite(['resources/js/pages/dashboard.js'])
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sales by Category Line Chart
+        if (document.getElementById('dash-performance-chart')) {
+            var options = {
+                chart: {
+                    height: 300,
+                    type: 'line',
+                    toolbar: {
+                        show: false
+                    }
+                },
+                stroke: {
+                    curve: 'smooth',
+                    width: 3
+                },
+                series: [{
+                    name: 'Category A',
+                    data: [280, 320, 295, 350, 340, 380, 310, 335, 400, 370, 390, 285]
+                }, {
+                    name: 'Category B',
+                    data: [120, 135, 130, 120, 140, 135, 150, 145, 130, 135, 140, 145]
+                }, {
+                    name: 'Category C',
+                    data: [45, 50, 55, 60, 55, 65, 70, 65, 75, 80, 75, 65]
+                }],
+                colors: ['#3B82F6', '#10B981', '#F59E0B'],
+                xaxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                },
+                yaxis: {
+                    title: {
+                        text: 'Sales ($ thousands)'
+                    }
+                },
+                tooltip: {
+                    shared: true,
+                    intersect: false,
+                    y: {
+                        formatter: function (y) {
+                            if (typeof y !== "undefined") {
+                                return "$" + y + "k";
+                            }
+                            return y;
+                        }
+                    }
+                },
+                grid: {
+                    borderColor: '#f1f1f1'
+                },
+                legend: {
+                    show: false
+                }
+            };
+            
+            var chart = new ApexCharts(
+                document.querySelector("#dash-performance-chart"),
+                options
+            );
+            
+            chart.render();
+        }
+        
+        // Inventory Distribution Donut Chart
+        if (document.getElementById('inventory-donut-chart')) {
+            var donutOptions = {
+                chart: {
+                    height: 240,
+                    type: 'donut',
+                },
+                series: [15, 42, 43],
+                labels: ['Category A', 'Category B', 'Category C'],
+                colors: ['#3B82F6', '#10B981', '#F59E0B'],
+                legend: {
+                    show: false,
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                plotOptions: {
+                    pie: {
+                        donut: {
+                            size: '80%'
+                        }
+                    }
+                }
+            };
+            
+            var donutChart = new ApexCharts(
+                document.querySelector("#inventory-donut-chart"),
+                donutOptions
+            );
+            
+            donutChart.render();
+        }
+    });
+</script>
 @endsection

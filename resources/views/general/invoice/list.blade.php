@@ -124,8 +124,13 @@
                                         <label class="form-check-label" for="customCheck2">&nbsp;</label>
                                     </div>
                                 </td>
-                                <td><a href="javascript: void(0);" class="text-body">#INV2540</a> </td>
-                                <td><img src="/images/users/avatar-2.jpg" class="avatar-sm rounded-circle me-2" alt="..."> Michael A. Miner</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Metropolitan General Hospital</h5>
+                                        <p class="mb-0 text-muted fs-13">Invoice #INV-5678</p>
+                                    </div>
+                                </td>
+                                <td>Michael A. Miner</td>
                                 <td> 07 Jan, 2023</td>
                                 <td> $452 </td>
                                 <td> Mastercard </td>
@@ -134,6 +139,7 @@
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-soft-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Download Invoice"><iconify-icon icon="solar:download-square-bold" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
                                     </div>
                                 </td>
@@ -146,8 +152,13 @@
                                         <label class="form-check-label" for="customCheck3">&nbsp;</label>
                                     </div>
                                 </td>
-                                <td><a href="javascript: void(0);" class="text-body">#INV3924</a> </td>
-                                <td><img src="/images/users/avatar-3.jpg" class="avatar-sm rounded-circle me-2" alt="..."> Theresa T. Brose</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Metropolitan General Hospital</h5>
+                                        <p class="mb-0 text-muted fs-13">Invoice #INV-5678</p>
+                                    </div>
+                                </td>
+                                <td>Theresa T. Brose</td>
                                 <td> 03 Dec, 2023</td>
                                 <td> $783 </td>
                                 <td> Visa </td>
@@ -156,6 +167,7 @@
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-soft-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Download Invoice"><iconify-icon icon="solar:download-square-bold" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
                                     </div>
                                 </td>
@@ -168,8 +180,13 @@
                                         <label class="form-check-label" for="customCheck4">&nbsp;</label>
                                     </div>
                                 </td>
-                                <td><a href="javascript: void(0);" class="text-body">#INV5032</a> </td>
-                                <td><img src="/images/users/avatar-4.jpg" class="avatar-sm rounded-circle me-2" alt="..."> James L. Erickson</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Metropolitan General Hospital</h5>
+                                        <p class="mb-0 text-muted fs-13">Invoice #INV-5678</p>
+                                    </div>
+                                </td>
+                                <td>James L. Erickson</td>
                                 <td> 28 Sep, 2023 </td>
                                 <td> $134 </td>
                                 <td> Paypal </td>
@@ -180,6 +197,7 @@
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-soft-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Download Invoice"><iconify-icon icon="solar:download-square-bold" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
                                     </div>
                                 </td>
@@ -191,8 +209,13 @@
                                         <label class="form-check-label" for="customCheck5">&nbsp;</label>
                                     </div>
                                 </td>
-                                <td><a href="javascript: void(0);" class="text-body">#INV1695</a> </td>
-                                <td><img src="/images/users/avatar-5.jpg" class="avatar-sm rounded-circle me-2" alt="..."> Lily W. Wilson</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Metropolitan General Hospital</h5>
+                                        <p class="mb-0 text-muted fs-13">Invoice #INV-5678</p>
+                                    </div>
+                                </td>
+                                <td>Lily W. Wilson</td>
                                 <td>10 Aug, 2023</td>
                                 <td> $945 </td>
                                 <td> Mastercard</td>
@@ -201,6 +224,7 @@
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-soft-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Download Invoice"><iconify-icon icon="solar:download-square-bold" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
                                     </div>
                                 </td>
@@ -212,8 +236,13 @@
                                         <label class="form-check-label" for="customCheck6">&nbsp;</label>
                                     </div>
                                 </td>
-                                <td><a href="javascript: void(0);" class="text-body">#INV8473</a> </td>
-                                <td><img src="/images/users/avatar-6.jpg" class="avatar-sm rounded-circle me-2" alt="..."> Sarah M. Brooks</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Metropolitan General Hospital</h5>
+                                        <p class="mb-0 text-muted fs-13">Invoice #INV-5678</p>
+                                    </div>
+                                </td>
+                                <td>Sarah M. Brooks</td>
                                 <td> 22 May, 2023 </td>
                                 <td> $421</td>
                                 <td> Visa</td>
@@ -222,6 +251,7 @@
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-soft-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Download Invoice"><iconify-icon icon="solar:download-square-bold" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
                                     </div>
                                 </td>
@@ -233,8 +263,13 @@
                                         <label class="form-check-label" for="customCheck7">&nbsp;</label>
                                     </div>
                                 </td>
-                                <td><a href="javascript: void(0);" class="text-body">#INV2150</a> </td>
-                                <td><img src="/images/users/avatar-7.jpg" class="avatar-sm rounded-circle me-2" alt="..."> Joe K. Hall</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Metropolitan General Hospital</h5>
+                                        <p class="mb-0 text-muted fs-13">Invoice #INV-5678</p>
+                                    </div>
+                                </td>
+                                <td>Joe K. Hall</td>
                                 <td>15 Mar, 2023
                                 </td>
                                 <td>$251 </td>
@@ -244,6 +279,7 @@
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-soft-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Download Invoice"><iconify-icon icon="solar:download-square-bold" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
                                     </div>
                                 </td>
@@ -255,8 +291,13 @@
                                         <label class="form-check-label" for="customCheck7">&nbsp;</label>
                                     </div>
                                 </td>
-                                <td><a href="javascript: void(0);" class="text-body">#INV5636</a> </td>
-                                <td><img src="/images/users/avatar-8.jpg" class="avatar-sm rounded-circle me-2" alt="...">Ralph Hueber</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Metropolitan General Hospital</h5>
+                                        <p class="mb-0 text-muted fs-13">Invoice #INV-5678</p>
+                                    </div>
+                                </td>
+                                <td>Ralph Hueber</td>
                                 <td>15 Mar, 2023
                                 </td>
                                 <td>$310 </td>
@@ -266,6 +307,7 @@
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-soft-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Download Invoice"><iconify-icon icon="solar:download-square-bold" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
                                     </div>
                                 </td>
@@ -277,8 +319,13 @@
                                         <label class="form-check-label" for="customCheck7">&nbsp;</label>
                                     </div>
                                 </td>
-                                <td><a href="javascript: void(0);" class="text-body">#INV2940</a> </td>
-                                <td><img src="/images/users/avatar-9.jpg" class="avatar-sm rounded-circle me-2" alt="...">Sarah Drescher</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Metropolitan General Hospital</h5>
+                                        <p class="mb-0 text-muted fs-13">Invoice #INV-5678</p>
+                                    </div>
+                                </td>
+                                <td>Sarah Drescher</td>
                                 <td>15 Mar, 2023
                                 </td>
                                 <td>$241 </td>
@@ -288,6 +335,7 @@
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-soft-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Download Invoice"><iconify-icon icon="solar:download-square-bold" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
                                     </div>
                                 </td>
@@ -299,8 +347,13 @@
                                         <label class="form-check-label" for="customCheck7">&nbsp;</label>
                                     </div>
                                 </td>
-                                <td><a href="javascript: void(0);" class="text-body">#INV9027</a> </td>
-                                <td><img src="/images/users/avatar-10.jpg" class="avatar-sm rounded-circle me-2" alt="...">Leonie Meister</td>
+                                <td>
+                                    <div>
+                                        <h5 class="mb-0 fs-14">Metropolitan General Hospital</h5>
+                                        <p class="mb-0 text-muted fs-13">Invoice #INV-5678</p>
+                                    </div>
+                                </td>
+                                <td>Leonie Meister</td>
                                 <td>15 Mar, 2023
                                 </td>
                                 <td>$136 </td>
@@ -310,6 +363,7 @@
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                        <a href="#!" class="btn btn-soft-info btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Download Invoice"><iconify-icon icon="solar:download-square-bold" class="align-middle fs-18"></iconify-icon></a>
                                         <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
                                     </div>
                                 </td>

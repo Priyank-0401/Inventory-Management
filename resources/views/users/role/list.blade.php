@@ -1,303 +1,183 @@
-@extends('layouts.vertical', ['title' => 'Roles List'])
+@extends('layouts.vertical', ['title' => 'Pharmaceutical Roles'])
 
 @section('content')
 
-<div class="card overflow-hiddenCoupons">
-    <div class="card-body p-0">
-        <div class="table-responsive">
-            <table class="table align-middle mb-0 table-hover table-centered">
-                <thead class="bg-light-subtle">
-                    <tr>
-                        <th>Role</th>
-                        <th>Workspace</th>
-                        <th>Tags</th>
-                        <th>Users</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Workspace Manager</td>
-                        <td>
-                            <img src="/images/app-calendar/facebook.png" class="avatar-xs rounded-circle me-1" alt="..."> Facebook
-                        </td>
-                        <td> <span class="badge bg-light-subtle text-muted border py-1 px-2">Manager</span> <span class="badge bg-light-subtle text-muted border py-1 px-2">Product</span></td>
-                        <td>
-                            <div class="avatar-group">
-                                <div class="avatar">
-                                    <img src="/images/users/avatar-4.jpg" alt="" class="rounded-circle avatar-sm">
-                                </div>
-                                <div class="avatar">
-                                    <span class=" avatar-sm d-flex align-items-center justify-content-center bg-danger-subtle text-danger rounded-circle fw-bold shadow">
-                                        P
-                                    </span>
-                                </div>
-                                <div class="avatar">
-                                    <img src="/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-sm">
-                                </div>
-                                <div class="avatar">
-                                    <img src="/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-sm">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked1" checked>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex gap-2">
-                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="{{ route('third', ['users', 'role', 'edit'])}}" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                            </div>
-                        </td>
-                    </tr>
+<div class="row">
+    <div class="col-xl-12">
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center gap-1">
+                <h4 class="card-title flex-grow-1">Staff Roles & Responsibilities</h4>
 
-                    <tr>
-                        <td>Product Owner</td>
-                        <td>
-                            <img src="/images/app-calendar/slack.png" class="avatar-xs rounded-circle me-1" alt="..."> Slack
-                        </td>
-                        <td> <span class="badge bg-light-subtle text-muted border py-1 px-2">Manager</span> <span class="badge bg-light-subtle text-muted border py-1 px-2">Product</span> <span class="badge bg-light-subtle text-muted border py-1 px-2">Data</span></td>
-                        <td>
-                            <div class="avatar-group">
-                                <div class="avatar">
-                                    <img src="/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-sm">
-                                </div>
-                                <div class="avatar">
-                                    <img src="/images/users/avatar-7.jpg" alt="" class="rounded-circle avatar-sm">
-                                </div>
-                                <div class="avatar">
-                                    <span class=" avatar-sm d-flex align-items-center justify-content-center bg-info-subtle text-info rounded-circle fw-bold shadow">
-                                        +12
-                                    </span>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked4">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex gap-2">
-                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="{{ route('third', ['users', 'role', 'edit'])}}" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Product Designer</td>
-                        <td>
-                            <img src="/images/app-calendar/zoom.png" class="avatar-xs rounded-circle me-1" alt="..."> Zoom
-                        </td>
-                        <td><span class="badge bg-light-subtle text-muted border py-1 px-2">Designer</span> <span class="badge bg-light-subtle text-muted border py-1 px-2">Data</span></td>
-                        <td>
-                            <div class="avatar">
-                                <img src="/images/users/avatar-10.jpg" alt="" class="rounded-circle avatar-sm">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked2" checked>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex gap-2">
-                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="{{ route('third', ['users', 'role', 'edit'])}}" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Data Analyst</td>
-                        <td>
-                            <img src="/images/app-calendar/google-analytics.png" class="avatar-xs rounded-circle me-1" alt="..."> Analytics
-                        </td>
-                        <td> <span class="badge bg-light-subtle text-muted border py-1 px-2">Data</span></td>
-                        <td>
-                            <div class="avatar-group">
-                                <div class="avatar">
-                                    <img src="/images/users/avatar-10.jpg" alt="" class="rounded-circle avatar-sm">
-                                </div>
-                                <div class="avatar">
-                                    <img src="/images/users/avatar-11.jpg" alt="" class="rounded-circle avatar-sm">
-                                </div>
-                                <div class="avatar">
-                                    <img src="/images/users/avatar-12.jpg" alt="" class="rounded-circle avatar-sm">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked4">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex gap-2">
-                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="{{ route('third', ['users', 'role', 'edit'])}}" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Tech Lead</td>
-                        <td>
-                            <a href="#!" class="link-primary">+ Add Workspace</a>
-                        </td>
-                        <td> <span class="badge bg-light-subtle text-muted border py-1 px-2">Product</span> <span class="badge bg-light-subtle text-muted border py-1 px-2">Data</span> <span class="badge bg-light-subtle text-muted border py-1 px-2">Supporter</span></td>
-                        <td> <a href="#!" class="link-primary">+ Add User</a></td>
-                        <td>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked4">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex gap-2">
-                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="{{ route('third', ['users', 'role', 'edit'])}}" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Product Manager</td>
-                        <td>
-                            <img src="/images/app-calendar/google-meet.png" class="avatar-xs rounded-circle me-1" alt="..."> Meet
-                        </td>
-                        <td> <span class="badge bg-light-subtle text-muted border py-1 px-2">System Design</span></td>
-                        <td>
-                            <div class="avatar-group">
-                                <div class="avatar">
-                                    <span class=" avatar-sm d-flex align-items-center justify-content-center bg-primary-subtle text-primary rounded-circle fw-bold shadow">
-                                        A
-                                    </span>
-                                </div>
-                                <div class="avatar">
-                                    <span class=" avatar-sm d-flex align-items-center justify-content-center bg-info-subtle text-info rounded-circle fw-bold shadow">
-                                        J
-                                    </span>
-                                </div>
-                                <div class="avatar">
-                                    <span class=" avatar-sm d-flex align-items-center justify-content-center bg-warning-subtle text-warning rounded-circle fw-bold shadow">
-                                        K
-                                    </span>
-                                </div>
-                                <div class="avatar">
-                                    <span class=" avatar-sm d-flex align-items-center justify-content-center bg-dark text-white rounded-circle fw-bold shadow">
-                                        +17
-                                    </span>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked3" checked>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex gap-2">
-                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="{{ route('third', ['users', 'role', 'edit'])}}" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Chief Product Owner</td>
-                        <td>
-                            <img src="/images/app-calendar/google-mail.png" class="avatar-xs rounded-circle me-1" alt="..."> Mail
-                        </td>
-                        <td> <span class="badge bg-light-subtle text-muted border py-1 px-2">Manager</span> <span class="badge bg-light-subtle text-muted border py-1 px-2">Product</span></td>
-                        <td>
-                            <div class="avatar-group">
-                                <div class="avatar">
-                                    <img src="/images/users/avatar-2.jpg" alt="" class="rounded-circle avatar-sm">
-                                </div>
-                                <div class="avatar">
-                                    <img src="/images/users/avatar-12.jpg" alt="" class="rounded-circle avatar-sm">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked4" checked>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex gap-2">
-                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="{{ route('third', ['users', 'role', 'edit'])}}" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Support Team Head</td>
-                        <td>
-                            <img src="/images/app-calendar/stripe.png" class="avatar-xs rounded-circle me-1" alt="..."> Strip
-                        </td>
-                        <td> <span class="badge bg-light-subtle text-muted border py-1 px-2">QA</span></td>
-                        <td>
-                            <div class="avatar">
-                                <span class=" avatar-sm d-flex align-items-center justify-content-center bg-warning-subtle text-warning rounded-circle fw-bold shadow">
-                                    K
-                                </span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked5">
-                            </div>
-                        </td>
-                        <td>
-                            <div class="d-flex gap-2">
-                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="{{ route('third', ['users', 'role', 'edit'])}}" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <!-- end table-responsive -->
-    </div>
-    <div class="row g-0 align-items-center justify-content-between text-center text-sm-start p-3 border-top">
-        <div class="col-sm">
-            <div class="text-muted">
-                Showing <span class="fw-semibold">10</span> of <span class="fw-semibold">59</span> Results
+                <a href="javascript:void(0);" class="btn btn-sm btn-primary">
+                    Add New Role
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-centered mb-0 table-hover">
+                        <thead class="bg-light-subtle">
+                            <tr>
+                                <th>Role</th>
+                                <th>Description</th>
+                                <th>Access Level</th>
+                                <th>Users Count</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-primary-subtle rounded me-2 d-flex align-items-center justify-content-center">
+                                            <i class="bx bx-user-circle fs-4 text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-1 fs-15">Pharmacy Manager</h5>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Oversees all pharmaceutical operations, inventory management, and staff supervision</td>
+                                <td><span class="badge bg-success">Full Access</span></td>
+                                <td>2</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <a href="javascript:void(0);" class="btn btn-soft-primary btn-sm"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-success-subtle rounded me-2 d-flex align-items-center justify-content-center">
+                                            <i class="bx bx-user-voice fs-4 text-success"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-1 fs-15">Lead Pharmacist</h5>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Approves prescriptions, oversees dispensing of medications, and ensures regulatory compliance</td>
+                                <td><span class="badge bg-info">High Access</span></td>
+                                <td>4</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <a href="javascript:void(0);" class="btn btn-soft-primary btn-sm"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-warning-subtle rounded me-2 d-flex align-items-center justify-content-center">
+                                            <i class="bx bx-id-card fs-4 text-warning"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-1 fs-15">Inventory Specialist</h5>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Manages medicine stock levels, tracks rare medication inventory, and places purchase orders</td>
+                                <td><span class="badge bg-primary">Medium Access</span></td>
+                                <td>6</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <a href="javascript:void(0);" class="btn btn-soft-primary btn-sm"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-danger-subtle rounded me-2 d-flex align-items-center justify-content-center">
+                                            <i class="bx bx-briefcase fs-4 text-danger"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-1 fs-15">Pharmaceutical Technician</h5>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Prepares medications, assists pharmacists, and handles basic customer inquiries</td>
+                                <td><span class="badge bg-warning">Limited Access</span></td>
+                                <td>12</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <a href="javascript:void(0);" class="btn btn-soft-primary btn-sm"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-info-subtle rounded me-2 d-flex align-items-center justify-content-center">
+                                            <i class="bx bx-dollar-circle fs-4 text-info"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-1 fs-15">Billing Specialist</h5>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Handles insurance claims, payments, and financial records for medication purchases</td>
+                                <td><span class="badge bg-warning">Limited Access</span></td>
+                                <td>5</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <a href="javascript:void(0);" class="btn btn-soft-primary btn-sm"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-secondary-subtle rounded me-2 d-flex align-items-center justify-content-center">
+                                            <i class="bx bx-user-pin fs-4 text-secondary"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-1 fs-15">Rare Disease Coordinator</h5>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Specializes in rare disease medications, patient education, and supplier coordination</td>
+                                <td><span class="badge bg-primary">Medium Access</span></td>
+                                <td>3</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <a href="javascript:void(0);" class="btn btn-soft-primary btn-sm"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar-sm bg-purple-subtle rounded me-2 d-flex align-items-center justify-content-center">
+                                            <i class="bx bx-package fs-4 text-purple"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-1 fs-15">Procurement Officer</h5>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>Manages relationships with pharmaceutical suppliers and negotiates prices for medications</td>
+                                <td><span class="badge bg-primary">Medium Access</span></td>
+                                <td>2</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <a href="javascript:void(0);" class="btn btn-soft-primary btn-sm"><i class="bx bx-edit fs-16"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-soft-danger btn-sm"><i class="bx bx-trash fs-16"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-        <div class="col-sm-auto mt-3 mt-sm-0">
-            <ul class="pagination  m-0">
-                <li class="page-item">
-                    <a href="#" class="page-link"><i class='bx bx-left-arrow-alt'></i></a>
-                </li>
-                <li class="page-item active">
-                    <a href="#" class="page-link">1</a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link">2</a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link">3</a>
-                </li>
-                <li class="page-item">
-                    <a href="#" class="page-link"><i class='bx bx-right-arrow-alt'></i></a>
-                </li>
-            </ul>
-        </div>
     </div>
-</div> <!-- end card -->
+</div>
 
 @endsection

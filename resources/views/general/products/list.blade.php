@@ -41,6 +41,7 @@
                                 <th>Price</th>
                                 <th>Stock</th>
                                 <th>Disease Type</th>
+                                <th>Barcode</th> <!-- Added Barcode Header -->
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -70,6 +71,7 @@
                                     <p class="mb-0 text-muted">155 Sold</p>
                                 </td>
                                 <td>Tyrosinemia Type 1</td>
+                                <td>8846455</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -104,6 +106,7 @@
                                     <p class="mb-0 text-muted">674 Sold</p>
                                 </td>
                                 <td>Gaucher's Disease</td>
+                                <td>4564646</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -137,6 +140,7 @@
                                     <p class="mb-0 text-muted">180 Sold</p>
                                 </td>
                                 <td>Wilson's Disease</td>
+                                <td>5646466</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -171,6 +175,7 @@
                                     <p class="mb-0 text-muted">87 Sold</p>
                                 </td>
                                 <td>Dravet and Lennox-Gastaut Syndromes</td>
+                                <td>46546546</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -206,6 +211,7 @@
                                     <p class="mb-0 text-muted">342 Sold</p>
                                 </td>
                                 <td>Paroxysmal Nocturnal Hemoglobinuria (PNH)</td>
+                                <td>4645645</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -241,6 +247,7 @@
                                     <p class="mb-0 text-muted">231 Sold</p>
                                 </td>
                                 <td>Paroxysmal Nocturnal Hemoglobinuria (PNH)</td>
+                                <td>4646545</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -276,6 +283,7 @@
                                     <p class="mb-0 text-muted">681 Sold</p>
                                 </td>
                                 <td>Pompe Disease</td>
+                                <td>464564879</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -310,6 +318,7 @@
                                     <p class="mb-0 text-muted">212 Sold</p>
                                 </td>
                                 <td>Mucopolysaccharidosis I (MPS I)</td>
+                                <td>5464654</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -344,6 +353,7 @@
                                     <p class="mb-0 text-muted">443 Sold</p>
                                 </td>
                                 <td>Mucopolysaccharidosis II (MPS II)</td>
+                                <td>8797966</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
@@ -378,6 +388,7 @@
                                     <p class="mb-0 text-muted">365 Sold</p>
                                 </td>
                                 <td>Maroteaux-Lamy Syndrome (MPS VI)</td>
+                                <td>87897687</td>
                                 <td>
                                     <div class="d-flex gap-2">
                                         <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>

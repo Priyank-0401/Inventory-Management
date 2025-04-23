@@ -260,7 +260,50 @@
     <!-- END wrapper -->
 
     <!-- Toast container - Fixed position but not affecting layout -->
-    <div id="toastPlacement" class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 9999; pointer-events: none;"></div>
+    <div id="toastPlacement" class="toast-container position-fixed top-0 end-0 p-4" style="z-index: 9999; pointer-events: none; margin-top: 70px; max-width: 600px; width: 100%;">
+        <style>
+            /* Toast notification enhancements */
+            .toast {
+                opacity: 1 !important; /* Ensure the toast is fully visible */
+                font-size: 1rem;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+                transform: translateX(0);
+            }
+            
+            /* Fade in animation */
+            .toast.showing {
+                transform: translateX(100px);
+                opacity: 0 !important;
+            }
+            
+            /* Fade out animation */
+            .toast.hide {
+                transform: translateX(100px);
+                opacity: 0 !important;
+            }
+            
+            /* Success toast specific styling */
+            .toast.text-bg-success {
+                background-color: #10b981 !important;
+                border-left: 5px solid #047857 !important;
+            }
+            
+            /* Error toast specific styling */
+            .toast.text-bg-danger {
+                background-color: #ef4444 !important;
+                border-left: 5px solid #b91c1c !important;
+            }
+            
+            /* Better close button visibility */
+            .toast .btn-close-white {
+                opacity: 0.8;
+            }
+            
+            .toast .btn-close-white:hover {
+                opacity: 1;
+            }
+        </style>
+    </div>
 
     <!-- Barcode Scanner Modal -->
     <div class="modal fade" id="barcodeScannerModal" tabindex="-1" aria-labelledby="barcodeScannerModalLabel" aria-hidden="true">
@@ -375,51 +418,93 @@
         });
 
         function fetchMedicineData(barcode) {
-            fetch(`/api/medicines/barcode/${barcode}`)
+            // Log the attempt
+            console.log(`Attempting to fetch medicine with barcode: ${barcode}`);
+            
+            // Create full URL with base URL - 127.0.0.1:8000 or your domain
+            // Using the direct web route instead of the API route
+            const baseUrl = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ":" + window.location.port : "");
+            const barcodeUrl = `${baseUrl}/api-barcode/lookup/${barcode}`;
+            console.log(`Barcode URL: ${barcodeUrl}`);
+            
+            fetch(barcodeUrl, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            })
                 .then(response => {
+                    console.log(`Response status: ${response.status}`);
                     if (!response.ok) {
-                        throw new Error('Medicine not found');
+                        return response.json().then(errorData => {
+                            throw new Error(`Medicine not found - Status: ${response.status}, Details: ${JSON.stringify(errorData)}`);
+                        }).catch(e => {
+                            throw new Error(`Medicine not found - Status: ${response.status}`);
+                        });
                     }
                     return response.json();
                 })
                 .then(medicine => {
+                    console.log(`Medicine found:`, medicine);
                     showMedicineNotification(medicine);
                 })
                 .catch(error => {
                     console.error('Error fetching medicine data:', error);
-                    showErrorNotification(barcode);
+                    showErrorNotification(barcode, error.message);
                 });
         }
 
-        function showMedicineNotification(medicine) {
-            const toastContainer = document.getElementById('toastPlacement');
-            if (!toastContainer) {
-                console.error('Toast container not found.');
-                return;
-            }
-
-            const toastId = `toast-${Date.now()}`;
-            const toastHtml = `
-                <div id="${toastId}" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true" style="pointer-events: auto;">
-                    <div class="d-flex">
-                        <div class="toast-body">
-                            <strong>${medicine.name}</strong><br>
-                            Price: $${medicine.price} | Stock: ${medicine.stock}<br>
-                            Barcode: ${medicine.barcode}
+        function showMedicineNotification(data) {
+            // Create toast HTML structure
+            const toastHTML = `
+            <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" style="min-width: 380px; max-width: 480px; box-shadow: 0 12px 28px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.12); border-radius: 12px; overflow: hidden; border: none;">
+                <div class="toast-header" style="background: linear-gradient(135deg, #20c997, #0d9b6d); padding: 16px; border: none;">
+            <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true" style="min-width: 400px; max-width: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); border-radius: 8px; overflow: hidden;">
+                <div class="toast-header bg-success text-white" style="padding: 14px 16px;">
+                    <strong class="me-auto" style="font-size: 1.2rem; font-weight: 600; letter-spacing: 0.3px;">Medicine Details</strong>
+                    <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body" style="padding: 20px; background-color: #ffffff; border-top: 1px solid rgba(0,0,0,0.05);">
+                    <div class="d-flex flex-column">
+                        <div class="mb-3" style="font-size: 1.3rem; font-weight: 600; color: #333; line-height: 1.3;">
+                            ${data.name}
                         </div>
-                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                        <div class="d-flex justify-content-between mb-3" style="border-bottom: 1px solid rgba(0,0,0,0.07); padding-bottom: 8px;">
+                            <span style="font-weight: 500; font-size: 1rem; color: #555;">Price:</span>
+                            <span style="font-weight: 600; font-size: 1rem; color: #333;">₱${data.price}</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3" style="border-bottom: 1px solid rgba(0,0,0,0.07); padding-bottom: 8px;">
+                            <span style="font-weight: 500; font-size: 1rem; color: #555;">Stock:</span>
+                            <span style="font-weight: 600; font-size: 1rem; color: #333;">${data.stock}</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span style="font-weight: 500; font-size: 1rem; color: #555;">Barcode:</span>
+                            <span style="font-weight: 600; font-size: 1rem; color: #333;">${data.barcode}</span>
+                        </div>
                     </div>
                 </div>
-            `;
+            </div>`;
 
-            toastContainer.insertAdjacentHTML('beforeend', toastHtml);
-            const toastElement = document.getElementById(toastId);
-            const toast = new bootstrap.Toast(toastElement, { delay: 5000 });
-            toast.show();
-            toastElement.addEventListener('hidden.bs.toast', () => toastElement.remove());
+            // Insert toast into toast placement container
+            document.getElementById('toastPlacement').innerHTML = toastHTML;
+
+            // Auto close toast after 12 seconds
+            setTimeout(() => {
+                const toast = document.querySelector('#toastPlacement .toast');
+                if (toast) {
+                    const bsToast = bootstrap.Toast.getInstance(toast);
+                    if (bsToast) {
+                        bsToast.hide();
+                    } else {
+                        toast.classList.remove('show');
+                        toast.classList.add('hide');
+                    }
+                }
+            }, 12000);
         }
 
-        function showErrorNotification(barcode) {
+        function showErrorNotification(barcode, errorDetails) {
             const toastContainer = document.getElementById('toastPlacement');
             if (!toastContainer) {
                 console.error('Toast container not found.');
@@ -428,10 +513,22 @@
             
             const toastId = `toast-error-${Date.now()}`;
             const toastHtml = `
-                <div id="${toastId}" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true" style="pointer-events: auto;">
+                <div id="${toastId}" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true" style="pointer-events: auto; min-width: 400px; box-shadow: 0 5px 15px rgba(0,0,0,0.2); border-left: 5px solid #dc3545 !important;">
                     <div class="d-flex">
-                        <div class="toast-body">
-                            Medicine with barcode <strong>${barcode}</strong> not found.
+                        <div class="toast-body p-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <iconify-icon icon="mdi:alert-circle" style="font-size: 24px; margin-right: 10px;"></iconify-icon>
+                                <h5 class="mb-0" style="font-size: 1.2rem; font-weight: 600;">Medicine Not Found</h5>
+                            </div>
+                            <div class="mt-2">
+                                <span class="d-flex align-items-center">
+                                    <iconify-icon icon="mdi:barcode" style="font-size: 18px; margin-right: 5px;"></iconify-icon>
+                                    <strong>Barcode:</strong> <span class="ms-1">${barcode}</span>
+                                </span>
+                            </div>
+                            <div class="mt-2 small" style="opacity: 0.9;">
+                                ${errorDetails || ''}
+                            </div>
                         </div>
                         <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
                     </div>
@@ -440,7 +537,7 @@
             
             toastContainer.insertAdjacentHTML('beforeend', toastHtml);
             const toastElement = document.getElementById(toastId);
-            const toast = new bootstrap.Toast(toastElement, { delay: 5000 });
+            const toast = new bootstrap.Toast(toastElement, { delay: 8000 }); // Increased delay to 8 seconds
             toast.show();
             toastElement.addEventListener('hidden.bs.toast', () => toastElement.remove());
         }

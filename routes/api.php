@@ -19,4 +19,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+// Medicine barcode lookup route - ensure this is accessible without auth
 Route::get('/medicines/barcode/{barcode}', [MedicineController::class, 'showByBarcode']);
+
+// Simple test endpoint
+Route::get('/test', function() {
+    return response()->json(['status' => 'API working!']);
+});

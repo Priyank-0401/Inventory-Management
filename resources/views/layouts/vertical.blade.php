@@ -54,10 +54,15 @@
             position: relative;
         }
         
+        /* Reduced sidebar width */
+        :root {
+            --bs-main-nav-width: 200px !important;
+        }
+        
         /* Content page margin adjustment for fixed sidebar */
         .content-page {
             transition: none;
-            margin-left: var(--bs-main-nav-width, 240px);
+            margin-left: var(--bs-main-nav-width, 200px);
         }
         
         /* Hide sidebar toggle button in all views */
@@ -69,10 +74,10 @@
             pointer-events: none !important;
         }
         
-        /* Make sure sidebar is always visible */
+        /* Make sure sidebar is always visible with reduced width */
         .main-nav {
-            width: var(--bs-main-nav-width, 240px) !important;
-            min-width: var(--bs-main-nav-width, 240px) !important;
+            width: var(--bs-main-nav-width, 200px) !important;
+            min-width: var(--bs-main-nav-width, 200px) !important;
             position: fixed !important;
             margin-left: 0 !important;
             transform: none !important;
@@ -97,6 +102,12 @@
             text-align: left !important;
             margin-left: 5.5rem !important;
             padding-left: 0 !important;
+            margin-top: 0.5rem !important;
+            margin-bottom: 0.5rem !important;
+            font-size: 1.25rem !important;
+            color: #97a4b1 !important;
+            letter-spacing: 0.5px !important;
+            font-weight: 700 !important;
         }
         
         /* Ensure the navbar header takes full width */
@@ -125,12 +136,18 @@
             display: none !important;
         }
         
+        /* Add top space to the logo box */
+        .main-nav .logo-box {
+            padding-top: 3rem !important;
+            margin-bottom: 3rem !important;
+        }
+        
         /* Make menu items always visible */
         html[data-menu-size="condensed"] .main-nav,
         html[data-menu-size="sm-hover"] .main-nav,
         html[data-menu-size="hidden"] .main-nav {
-            width: var(--bs-main-nav-width, 240px) !important;
-            min-width: var(--bs-main-nav-width, 240px) !important;
+            width: var(--bs-main-nav-width, 200px) !important;
+            min-width: var(--bs-main-nav-width, 200px) !important;
         }
         
         html[data-menu-size="condensed"] .main-nav .nav-link .nav-text,
@@ -142,7 +159,7 @@
         html[data-menu-size="condensed"] .content-page,
         html[data-menu-size="sm-hover"] .content-page,
         html[data-menu-size="hidden"] .content-page {
-            margin-left: var(--bs-main-nav-width, 240px) !important;
+            margin-left: var(--bs-main-nav-width, 200px) !important;
         }
         
         /* Mobile responsive adjustments */
@@ -152,7 +169,7 @@
             }
             
             .main-nav {
-                margin-left: -240px !important;
+                margin-left: -200px !important;
                 z-index: 1050;
             }
             
@@ -165,6 +182,52 @@
                 padding-right: 1rem;
             }
         }
+        
+        /* Reduce sidebar menu text size */
+        .main-nav .menu-title {
+            font-size: 1rem !important;
+            opacity: 0.8 !important;
+            letter-spacing: 0.5px !important;
+            margin-top: 1rem !important;
+            margin-bottom: 0.5rem !important;
+            padding-left: 1rem !important;
+        }
+        
+        .main-nav .nav-link .nav-text {
+            font-size: 1rem !important;
+        }
+        
+        /* Make icons slightly smaller */
+        .main-nav .nav-link .nav-icon {
+            font-size: 1.2rem !important;
+        }
+        
+        /* Reduce spacing between menu items */
+        .main-nav .nav-item {
+            margin-top: 0.2rem !important;
+            margin-bottom: 0.2rem !important;
+        }
+        
+        .main-nav .nav-link {
+            padding-top: 0.45rem !important;
+            padding-bottom: 0.45rem !important;
+            padding-left: 1rem !important;
+        }
+        
+        /* Reduce font size for dropdown submenu items */
+        .main-nav .sub-navbar-nav .sub-nav-item .sub-nav-link {
+            font-size: 0.9rem !important;
+            padding-top: 0.35rem !important;
+            padding-bottom: 0.35rem !important;
+        }
+        
+        /* Adjust logo sizing for narrower sidebar */
+        .main-nav .logo-box img.logo-lg {
+            max-width: 85% !important;
+            height: auto !important;
+        }
+        
+        /* Make menu items always visible */
     </style>
 </head>
 

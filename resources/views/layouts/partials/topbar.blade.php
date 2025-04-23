@@ -1,7 +1,7 @@
 <header class="topbar">
     <div class="navbar-header d-flex justify-content-between align-items-center">
-        <!-- App Title - Simplified structure -->
-        <h4 class="fw-bold topbar-button pe-none text-uppercase mb-0">PHARMACY DASHBOARD</h4>
+        <!-- App Title - Dynamic based on page -->
+        <h4 class="fw-bold topbar-button pe-none text-uppercase mb-0">{{ $title ?? 'DASHBOARD' }}</h4>
 
         <div class="d-flex align-items-center gap-1">
             <!-- Barcode Scanner -->
